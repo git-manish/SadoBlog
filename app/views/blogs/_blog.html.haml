@@ -1,0 +1,17 @@
+%p.fleft
+  .entry-meta
+    %a{:href => "#"}
+      = blog.created_at.strftime("%B %d, %Y")
+%br/
+%p
+  %div
+    %h3= link_to truncate(blog.title,:length => 50, :omission => "......") , blog
+  %div
+    - if user_signed_in?
+      = link_to 'Edit', edit_blog_path(blog)
+      |
+      \#{link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete}
+    %div
+%p
+  = truncate(blog.body, :length => 500, :omission => "...#{link_to 'Read More', blog}").html_safe
+.cboth &nbsp;

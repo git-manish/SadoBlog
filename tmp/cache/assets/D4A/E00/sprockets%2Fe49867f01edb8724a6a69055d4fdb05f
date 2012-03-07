@@ -1,0 +1,31 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1330678349.8746707:@value{I"
+class:EFI"ProcessedAsset;
+FI"logical_path;
+F"blogs.jsI"pathname;
+FI"1$root/app/assets/javascripts/blogs.js.coffee;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-03-02T13:07:05+05:30;
+FI"length;
+Fi%I"digest;
+F"%571454e6b728ddcfb7fdc3b132066f5aI"source;
+FI"%(function() {
+
+
+
+}).call(this);
+;
+TI"dependency_digest;
+F"%b74f7012b9ca43cf182111726c6d7445I"required_paths;
+F[I"1$root/app/assets/javascripts/blogs.js.coffee;
+FI"dependency_paths;
+F[{I"	path;
+FI"1$root/app/assets/javascripts/blogs.js.coffee;
+FI"
+mtime;
+FI"2012-03-02T13:07:05+05:30;
+FI"digest;
+F"%6b7d15da56c9b5e72e591dce20abfd72I"_version;
+F"%aa7d0db7619379e13b08335dee027df2

@@ -1,0 +1,12 @@
+- counter=1
+- @blog.comments.order("id desc").each do |comment|
+  - if !comment.new_record? && !comment.name.nil? && !comment.name.blank?
+    %div{:class => "#{counter%2==0?'even':'odd'}_comment"}
+      = mail_to comment.email, comment.name+" says ",:subject => "Re:comment "+truncate(@blog.body, :length => 50, :omission => "..." )
+      ,
+      %br/
+      .comment-time
+        = comment.created_at.strftime("%B %d, %Y at %I:%M%p")
+      %b Comment:
+      = comment.body
+    - counter+=1

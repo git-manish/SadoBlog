@@ -1,0 +1,30 @@
+%p#notice= notice
+%p
+  %h3= @blog.title
+%p
+  %p
+    .entry-meta
+      %a{:href => "#"}
+        Created on #{@blog.created_at.strftime("%B %d, %Y at %I:%M%p")}
+  %p.cboth
+    = @blog.body
+  - if user_signed_in?
+    = link_to 'Edit', edit_blog_path(@blog)
+    |
+    \#{link_to 'Back', blogs_path}
+
+  %h2.comment Leave a Comment
+  = form_for([@blog, @blog.comments.build]) do |f|
+    .field
+      = f.label :name
+      = f.text_field :name
+    .field
+      = f.label :email
+      = f.text_field :email
+    .field
+      = f.label "Comment",:style=>"vertical-align:top"
+      = f.text_area :body, :cols => 42, :rows =>5
+    %p
+      %label{:style => "margin-left: 72px;"}
+        = f.submit "Submit"
+  = render :partial => "comments/comment"

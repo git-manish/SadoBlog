@@ -1,0 +1,105 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1330678349.40014:@value{I"
+class:EFI"ProcessedAsset;
+FI"logical_path;
+F"scaffolds.cssI"pathname;
+FI"4$root/app/assets/stylesheets/scaffolds.css.scss;
+FI"content_type;
+FI"text/css;
+FI"
+mtime;
+FI"2012-03-02T13:07:05+05:30;
+FI"length;
+FiOI"digest;
+F"%35b8589e38f38151fca42f3348310d7fI"source;
+FI"O/* line 1, /home/cis/Desktop/projects/sadoblog/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 8, /home/cis/Desktop/projects/sadoblog/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 13, /home/cis/Desktop/projects/sadoblog/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 18, /home/cis/Desktop/projects/sadoblog/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 20, /home/cis/Desktop/projects/sadoblog/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 22, /home/cis/Desktop/projects/sadoblog/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 27, /home/cis/Desktop/projects/sadoblog/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 30, /home/cis/Desktop/projects/sadoblog/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 33, /home/cis/Desktop/projects/sadoblog/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 38, /home/cis/Desktop/projects/sadoblog/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 45, /home/cis/Desktop/projects/sadoblog/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 54, /home/cis/Desktop/projects/sadoblog/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+;
+FI"dependency_digest;
+F"%f8d362bc605810cbe2ffc813b0dc4eaeI"required_paths;
+F[I"4$root/app/assets/stylesheets/scaffolds.css.scss;
+FI"dependency_paths;
+F[{I"	path;
+FI"4$root/app/assets/stylesheets/scaffolds.css.scss;
+FI"
+mtime;
+FI"2012-03-02T13:07:05+05:30;
+FI"digest;
+F"%0e3aed622e89c209df90f1c1f3f64139I"_version;
+F"%aa7d0db7619379e13b08335dee027df2

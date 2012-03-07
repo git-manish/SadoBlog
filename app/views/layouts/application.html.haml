@@ -1,0 +1,40 @@
+!!!
+%html
+  %head
+    %title Sado blog
+    %link{:href => "/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    - if params["action"]=="show" &&  params["controller"]=="blogs"
+      / start Mixpanel
+      :javascript
+        var mpq=[];mpq.push(["init","320b5897e2701efc9ac342d1ed1a9af2"]);(function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+"//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push([f].concat(Array.prototype.slice.call(arguments,0)))}};d=["init","track","track_links","track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<d.length;c++){mpq[d[c]]=e(d[c])}})();
+        
+      / end Mixpanel
+  %body
+    #header
+      - if user_signed_in?
+        / ...log-out...
+        .fright.fwhite
+          Welcome,
+          %a{:href => "#"}
+            = current_user[:email]
+          |
+          \#{link_to "Logout",destroy_user_session_path, :method=> "delete"} |
+      - else
+        .fright.fwhite
+          = link_to "Sign in", new_user_session_path
+          |
+          \#{link_to "Sign up", new_user_registration_path}  |
+    .cboth &nbsp;
+    .container
+      #content.span-17.colborder
+        = yield
+      #sidebar.span-4.last
+    #footer
+      %a{:href => "http://mixpanel.com/f/partner"}
+        %img{:alt => "Real Time Web Analytics", :src => "http://mixpanel.com/site_media/images/partner/badge_blue.png", :style => "border:none;"}/
+  - if params["action"]=="show" &&  params["controller"]=="blogs"
+    :javascript
+      mpq.track('#{@mpqtrack}');

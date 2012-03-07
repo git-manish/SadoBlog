@@ -1,0 +1,15 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1330768540.1364217:@value{I"
+class:EFI"StaticAsset;
+FI"logical_path;
+FI"wisewizur.png;
+TI"pathname;
+FI"*$root/app/assets/images/wisewizur.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-03-03T12:44:59+05:30;
+FI"length;
+Fià@I"digest;
+F"%da40e0d3dbb5773572db6f5cf8881ba6I"_version;
+F"%aa7d0db7619379e13b08335dee027df2
